@@ -52,8 +52,6 @@ public class TemperatureLogController {
                 temperature
         );
 
-        log.info(logOutput.toString());
-
         String exchange = RabbitMQConfig.FANOUT_EXCHANGE_NAME;
         String routingKey = "";
 
